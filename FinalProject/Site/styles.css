@@ -1,0 +1,126 @@
+/*style for all html elements*/
+html {
+	background-color: #BBC5CF;
+	font-family:palatino linotype, palatino, serif;
+	font-variant: small-caps;
+}
+
+/*header image*/
+.headerImg {
+	text-align:center;
+}
+
+/*menu unordered list*/
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+/*menu list items*/
+.menu li {
+    display: inline;
+	float: left;
+	display: block;
+    padding: 10px 25px;
+    font-weight: bold;
+    color: #2CC0B3;
+	font-family:palatino linotype, palatino, serif;
+	font-size:25px;
+}
+
+/* visited link */
+a:visited {
+	text-decoration:none;
+	color: #2CC0B3;
+}
+
+/*links*/
+a {
+	text-decoration:none;
+	color: #2CC0B3;
+}
+
+/*div menu styling*/
+.menu {
+	width: 100%;
+    float: left;
+    margin: 0 0 3em 0;
+    padding: 0;
+    list-style: none;
+    background-color: #000000;
+    border-bottom: 1px solid #ccc; 
+    border-top: 1px solid #ccc;
+	text-align: center;
+}
+
+/*menu link on hover styling*/
+.menu li a:hover {
+	text-decoration:none;
+	color: #E3E4E5;
+}
+
+/*table header styling*/
+.portHeader {
+	text-align: left;
+	color: black;
+	width:25%;
+	font-size:30px;
+	text-shadow:1px 1px 1px #2CC0B3;
+	padding-bottom:30px;
+	padding-top:20px;
+}
+
+/*table data styling*/
+.portData { 
+	padding-bottom:20px;
+	text-align: left;
+	width:25%;
+	font-size:25px;
+}
+
+/*resume labels*/
+.data { 
+	text-align: left;
+	width:15%;
+	font-size:20px;
+	vertical-align:top;
+}
+
+/*resume info*/
+.info {
+	text-align: left;
+	width:85%;
+	font-size:20px;
+	vertical-align:top;
+}
+
+/*header 1 styles*/
+h1 {
+	color: black;
+	text-shadow:1px 1px 1px #2CC0B3;
+}
+
+/*paragraph styling*/
+p {
+	font-size: 20px;
+}
+
+/*phone styling*/
+.phone {
+	display: inlne;
+}
+
+/*footer styling*/
+.footer {
+	width: 100%;
+    float: left;
+    margin: 0 0 3em 0;
+    padding: 0;
+    list-style: none;
+	color:#E3E4E5;
+	text-align: center;
+    background-color: #000000;
+    border-bottom: 1px solid #ccc; 
+    border-top: 1px solid #ccc; }
+}

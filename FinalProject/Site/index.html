@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+ Chris Otto
+ ITDEV-160 Fall 2014
+ Final Project
+ 11/29/2014
+-->
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Chris Otto's Homepage</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+	$(document).ready(function() {
+		//Animates the click event of the h1 element
+		$('h1').click(function() {
+			$(this).animate({fontSize: '+=5px'});
+		});
+		
+		//Changes footer style on click
+		$('.footer').click(function() {
+			$(this).removeClass("footer");
+		});
+	});
+  </script>
+ </head>
+ <div class="headerImg" style="width:100%;">
+	<img src="Media/headerImage.png" alt="HeaderImage">
+ </div>
+ <div class="menu">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="resume.html">Resume</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+ </div>
+ <body>
+ <h1>
+	About Me
+ </h1>
+ <p>
+	Welcome to my site able to find my portfolio, resume and contact form. A little bit about myself I am currently in my last semester at MATC and will graduate with an associates in Mobile Application Developement. I am versed in C#, Objective-C, HTML, ASP.NET, CSS, PHP, SQL, MySQL, Javascript, jQuery, Java. I gained most exposure to these technologies in school and also in my professional career. Currently I am a Quality Assurance Engineer at JDA Software, with just under three years experience I know Quality Center, FitNesse, Selenium, TFS, Git, SSMS, JIRA, Sharepoint, IIS, manual testing, regression testing, agile development and all phases of the software development lifecycle.
+	<br>
+	<br>
+    I am also a Soldier in the Wisconsin Army National Guard with the military occupational specialty of Signal Support System Specialist. I currently hold the position of Sergeant (E-5) operating out of Charlie Company 2-127th in Fond Du Lac, WI.
+ </p>
+  <video width="450" height="360" controls style="display: block; margin: 0 auto;">
+	<source src="Media/video.mp4" type="video/mp4">
+	Your browser does not support the video tag.
+ </video>
+ </body>
+ <div class="footer">
+	&copy; Chris Otto 2014
+ </div>
+</html>

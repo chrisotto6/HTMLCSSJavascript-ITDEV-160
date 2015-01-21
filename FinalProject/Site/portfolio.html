@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<!--
+ Chris Otto
+ ITDEV-160 Fall 2014
+ Final Project
+ 11/29/2014
+-->
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Chris' Portfolio</title>
+  <script>
+	$(document).ready(function() {
+		//Animates the click event of the h1 element
+		$('h1').click(function() {
+			$(this).animate({fontSize: '+=5px'});
+		});
+	});
+  </script>
+ </head>
+  <div class="headerImg" style="width:100%;">
+	<img src="Media/headerImage.png" alt="HeaderImage">
+ </div>
+ <div class="menu">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="resume.html">Resume</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+ </div>
+ <body>
+ <h1>
+	Portfolio
+ </h1>
+ <p>
+	Below you will find QR codes that you will be able to scan will your Android device! In order to do so you need to have a QR Code scanner application installed. I recommend QR Droid, feel free to try out as many of them as you wish. Also, if you have any comments or improvements to make please navigate over to the contact page and let me know!
+ </p>
+  <table width="100%" cellpadding="0" cellspacing="5" border="0">
+	<tr>
+		<th class="portHeader">
+			Application
+		</th>
+		<th class="portHeader">
+			QR Code
+		</th>
+		<th class="portHeader">
+			Application
+		</th>
+		<th class="portHeader">
+			QR Code
+		</th>
+	</tr>
+	<tr>
+		<td class="portData">
+			Hello Purr
+		</td>
+		<td class="portData">
+			<img src="QRCodes/HelloPurr.png" alt="Hello Purr QR">
+		</td>
+		<td class="portData">
+			Magic 8-Ball
+		</td>
+		<td class="portData">
+			<img src="QRCodes/Magic8Ball.png" alt="Magic 8-Ball QR">
+		</td>
+	</tr>
+	<tr>
+		<td class="portData">
+			Ball Bounce
+		</td>
+		<td class="portData">
+			<img src="QRCodes/BallBounce.png" alt="Ball Bounce QR Code">
+		</td>
+		<td class="portData">
+			Paint Pot
+		</td>
+		<td class="portData">
+			<img src="QRCodes/PaintPot.png" alt="Paint Pot QR Code">
+		</td>
+	</tr>
+	<tr>
+		<td class="portData">
+			Mole Mash
+		</td>
+		<td class="portData">
+			<img src="QRCodes/MoleMash.png" alt="Mole Mash QR Code">
+		</td>
+		<td class="portData">
+			Rock, Paper, Scissors
+		</td>
+		<td class="portData">
+			<img src="QRCodes/RockPaperScissors.png" alt="Rock Paper Scissors QR Code">
+		</td>
+	</tr>
+	<tr>
+		<td class="portData">
+			Map Tour
+		</td>
+		<td class="portData">
+			<img src="QRCodes/MapTour.png" alt="Map Tour QR Code">
+		</td>
+		<td class="portData">
+			Gordon Lodge
+		</td>
+		<td class="portData">
+			<img src="QRCodes/GordonLodge.png" alt="Gordon Lodge QR Code">
+		</td>
+	</tr>
+  </table>
+ </body>
+  <div class="footer">
+	&copy; Chris Otto 2014
+ </div>
+</html>

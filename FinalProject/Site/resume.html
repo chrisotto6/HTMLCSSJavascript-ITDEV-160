@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<!--
+ Chris Otto
+ ITDEV-160 Fall 2014
+ Final Project
+ 11/29/2014
+-->
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Chris' Resume</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+	$(document).ready(function() {
+		//If the objective is clicked hide, if hid show
+		$('.objective').click(function() {
+			if ($('#objective').is(':visible')) {
+				$('#objective').slideUp(1000);
+			}
+			else {
+				$('#objective').slideDown(1000);
+			}
+		});
+		
+		//If the technical acumen is clicked hide, if hid show
+		$('.tech').click(function() {
+			if ($('#tech').is(':visible')) {
+				$('#tech').slideUp(1000);
+			}
+			else {
+				$('#tech').slideDown(1000);
+			}
+		});
+		
+		//If the experience is clicked hide, if hid show
+		$('.experience').click(function() {
+			if ($('#experience').is(':visible')) {
+				$('#experience').slideUp(1000);
+			}
+			else {
+				$('#experience').slideDown(1000);
+			}
+		});
+		
+		//If the experience is clicked hide, if hid show
+		$('.education').click(function() {
+			if ($('#education').is(':visible')) {
+				$('#education').slideUp(1000);
+			}
+			else {
+				$('#education').slideDown(1000);
+			}
+		});
+		
+		//Animates the click event of the h1 element
+		$('h1').click(function() {
+			$(this).animate({fontSize: '+=5px'});
+		});
+	});
+  </script>
+ </head>
+ <div class="headerImg" style="width:100%;">
+	<img src="Media/headerImage.png" alt="HeaderImage">
+ </div>
+ <div class="menu">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="resume.html">Resume</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+ </div>
+ <body>
+	<h1>
+		Resume
+	</h1>
+	<h2 class="objective">
+		Objective
+	</h2>
+	<p id="objective">
+		To obtain a software development position, based on my hard working ethic, technological experience and knowledge from different areas of the application lifecycle.
+	</p>
+	<h2 class="tech">
+		Technical Acumen
+	</h2>
+	<table style="width:100%" id="tech">
+		<tr>
+			<td class="data">
+				Languages
+			</td>
+			<td class="info">
+				C#, ASP.NET, Javascript, jQuery, PHP, MySQL, HTML, CSS, SSMS, Java
+			</td>
+		</tr>
+		<tr>
+			<td class="data">
+				Software
+			</td>
+			<td class="info">
+				Visual Studio, Team Foundation Server, Sharepoint, Visio, Microsoft Office Suite, Eclipse, SQL Server Mangaement Studio, Notepad++, Telerik Test Studio, Agile Development
+			</td>
+		</tr>
+				<tr>
+			<td class="data">
+				Platforms
+			</td>
+			<td class="info">
+				OSX, Windows XP, Windows 7, Windows 8, iOS, Android
+			</td>
+		</tr>
+	</table>
+	<h2 class="experience">
+		Work Experience
+	</h2>
+	<div  id="experience">
+	<p>
+		JDA Software&nbsp;| &nbsp;Intermediate Quality Engineer&nbsp;|&nbsp;Waukesha, WI&nbsp;|&nbsp;November 2014-Present	
+		<ul>
+			<li>
+				Utilize FitNesse and Selenium to create highly effective automated tests. Tied together with Continuous Integration these tests run multiple times daily to protect the software from regression.
+			</li>
+			<li>
+				Employ numerous methods to manual test new development and the existing code base such as exploratory testing, writing scripted manual tests, end to end, and performance testing.
+			</li>
+			<li>
+				Advise on developing performance criteria and validating products meet performance requirements.
+			</li>
+			<li>
+				Develop practices and tools to facilitate quality with a high degree of test automation for highly scalable products.
+			</li>
+			<li>
+				Develop solid understanding of the Warehouse Management product areas from a functional/architectural/performance perspective.
+			</li>
+			<li>
+				Identify and implement agile strategies to leverage the testing process and test tools.
+			</li>
+			<li>
+				Participate as an embedded QA Engineer on projects and develop test cases and test scripts.
+			</li>
+			<li>
+				Assist in ensuring release guidelines are met for the Warehouse Management product.
+			</li>
+			<li>
+				Participate in the continuous effort to bring new testing knowledge into project teams with test strategy articulation, planning, execution, and management of individual testing events.
+			</li>
+			<li>
+				Participate in the development and support of an agile testing program aimed at supporting multiple testing efforts simultaneously.
+			</li>
+			<li>
+				Assist in configuring, maintaining and monitoring of continuous integration servers.
+			</li>
+		</ul>
+	</p>
+	<p>
+		Competitive Edge Software Inc. &nbsp;| &nbsp;Quality Assurance Team Lead&nbsp;|&nbsp;Franklin, WI&nbsp;|&nbsp;May 2012-November 2014
+		<ul>
+			<li>
+				Establish, document and enforce testing standards for the QA Department and team members.
+			</li>
+			<li>
+				Manage team members and allocated resources to fit needs of sales, support, training and development departments.
+			</li>
+			<li>
+				Test validation in application layer, debug, and backend with SQL queries.
+			</li>
+			<li>
+				Coordinate pre and post production software release with Team Foundation Server.
+			</li>
+			<li>
+				QA Lead for Agile development teams for various projects. 
+			</li>
+			<li>
+				Pair program and support software developers in real time during sprint execution while enforcing test driven development standards.
+			</li>
+			<li>
+				Use user acceptance criteria, data validation and automated testing suites to ensure software is quality.
+			</li>
+			<li>
+				Work with development and support manager on timelines for new version releases.
+			</li>
+			<li>
+				JIRA administrator, generate precise workflows for projects and configuration of the whole system.
+			</li>
+		</ul>
+	</p>
+	<p>
+		Wisconsin Army National Guard&nbsp;| &nbsp;Signal Support System Specialist (25U)&nbsp;| &nbsp;Rank: Sergeant&nbsp;| &nbsp;Fond Du Lac, WI&nbsp;| &nbsp;March 2011-Present
+		<ul>
+			<li>
+				Troubleshoot, maintain, operate, install and fix communication equipment at the company and battalion level.
+			</li>
+			<li>
+				Enforce communication security policy and procedures. Implement preventative maintenance procedures to ensure equipment stays operational.
+			</li>
+			<li>
+				As Forward Signal NCO, lead troops to accomplish mission sets based on battalion command chain.	
+			</li>
+		</ul>
+	</p>
+	</div>
+	<h2 class="education">
+		Education
+	</h2>
+	<p id="education">
+		Milwaukee Area Technical College&nbsp;| &nbsp;Associate's Degree&nbsp;| &nbsp;Mobile Application Development&nbsp;| &nbsp;2014&nbsp;| &nbsp;GPA: 3.62
+	</p>
+ </body>
+ <div class="footer">
+	&copy; Chris Otto 2014
+ </div>
+</html>

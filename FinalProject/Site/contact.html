@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--
+ Chris Otto
+ ITDEV-160 Fall 2014
+ Final Project
+ 11/29/2014
+-->
+<html>
+ <head>
+  <meta charset="UTF-8">
+  <title>Contact Chris</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <script>
+	$(document).ready(function() {
+		//Brings focus to the first text field
+		$(':text:first').focus();
+		
+		//Says thanks info submit click
+		$( "#contact" ).submit(function( event ) {
+			alert( "Thank you for the inquiry!" );
+			event.preventDefault();
+		});
+		
+		//Animates the click event of the h1 element
+		$('h1').click(function() {
+			$(this).animate({fontSize: '+=5px'});
+		});
+	}); //end ready
+  </script>
+ </head>
+ <div class="headerImg" style="width:100%;">
+	<img src="Media/headerImage.png" alt="HeaderImage">
+ </div>
+ <div class="menu">
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="portfolio.html">Portfolio</a></li>
+		<li><a href="resume.html">Resume</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+ </div>
+ <body>
+ <h1>
+	Contact
+ </h1>
+ <p>
+	Please enter your personal or professional information below and I will reply in a timely manor. Thank you for visiting my page!
+ </p>
+ <form action="mailto:ottocm@gmatc.matc.edu" id="contact" method="POST">
+	<div>
+		<label for="name" class="label">Name</label>
+		<input type="text" name="name" id="name"><br>
+		<label for="email" class="label">Email</label>
+		<input type="text" name="email" id="email"><br>
+		<div class="phone">
+			<label for="phone" class="label">Phone number</label>
+			<input type="text" name="phone" id="phone">
+			<label for="phone" class="label">Type</label>
+			<select name="phone"><br>
+				<option value=''>--Select Phone Type--</option>
+				<option value='cell'>Cell</option>
+				<option value='home'>Home</option>
+				<option value='work'>Work</option>
+			</select>
+		</div>
+		<label for="org" class="label">Organization</label>
+		<input type="text" name="org" id="org"><br>
+		<label for="message" class="label">Message</label><br>
+		<textarea rows="10" cols="100" class="message" style="text-align:left;">
+		</textarea>
+	</div>
+	<br>
+	<input type="submit" value="Submit">
+ </form>
+ <br>
+ <br>
+ </body>
+ <div class="footer">
+	&copy; Chris Otto 2014
+ </div>
+</html>
